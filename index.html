@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense-Money | Tracker App</title>
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap StyleSheet -->
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+
+<body>
+    <div class="main-container d-flex flex-column align-items-center justify-content-center">
+        <div class="container">
+            <div class="main-heading">
+                <h2>Expense-Money | Tracker App</h2>
+            </div>
+            <h4>Your Balance</h4>
+            <h1 id="balance">$0.00</h1>
+
+            <!-- Income Expense Container -->
+            <div class="inc-exp-container rounded-4 ">
+                <div class="row text-center">
+                    <div class="col mt-3">
+                        <h4 class="text-black">INCOME</h4>
+                        <h5 id="money-plus" class="money-plus fs-3">+$0.00</h5>
+                    </div>
+                    <div class="col mt-3">
+                        <h4 class="text-black">EXPENSE</h4>
+                        <h5 id="money-minus" class="money-minus fs-3">-$0.00</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Money History -->
+            <h3 class="border-bottom pt-3 pb-3">History</h3>
+            <ul id="list" class="list">
+                <li class="minus list-unstyled">
+                    Cash<span>-$400</span>
+                    <!-- History Delete Button -->
+                    <button class="dlt-btn">X</button>
+                </li>
+            </ul>
+
+            <!-- Add New Transition -->
+            <h3 class="border-bottom pb-3">Add New Transaction</h3>
+            <form id="form" class="d-inline-block mt-3">
+                <div class="form">
+                    <label for="text" class="fs-5">Text</label>
+                    <input type="text" id="text" class="fw-bolder" placeholder="Enter Text...">
+                </div>
+                <div class="form mt-3">
+                    <label for="amount" class="fs-5">Amount</label>
+                    <input type="number" id="amount" class="fw-bolder" placeholder="Enter Amount...">
+                </div>
+                <button class="transaction-btn fs-5 fw-bolder">Add Transactions</button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <!-- JavaScript File -->
+    <script src="app.js"></script>
+    <!-- Bootstrap JavaScript File -->
+    <script src="bootstrap.js"></script>
+</body>
+
+</html>

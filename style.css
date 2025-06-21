@@ -1,0 +1,84 @@
+@font-face {
+    font-family: "playfair";
+    src: url(./Fonts-Playfair/PlayfairDisplay-Regular.ttf);
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #B0DB9C !important;
+    min-height: 100vh;
+    color: #DDF6D2 !important;
+}
+.main-container{
+    background-color: #255F38;
+    margin-left: 0;
+    border-radius: 10px;
+}
+.container{
+    margin: 30px auto;
+    width: 350px;
+    font-family: "playfair";
+}
+h1{
+    letter-spacing: 2px;
+}
+.inc-exp-container{
+    background-color: #D1D8BE;
+    width: 100%;
+    filter: drop-shadow(rgba(0, 0, 0, 0.35) 0px 5px 15px);
+}
+.money-plus{
+    color: #255F38;
+}
+.money-minus{
+    color: #c0392b;
+}
+input[type="text"],input[type="number"]{
+    display: block;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 350px;
+    padding: 10px;
+}
+.dlt-btn{
+    outline: none;
+    border: none;
+}
+.dlt-btn:hover{
+    background-color: #c0392b;
+    color: #DDF6D2;
+}
+.transaction-btn{
+    margin: 50px 0px 20px 0px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    width: 350px;
+    height: 50px;
+}
+.transaction-btn:hover{
+    background-color: black;
+    color: #B0DB9C;
+    margin: 50px 0px 20px 0px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    width: 350px;
+    height: 50px;
+}
+@media screen and (min-width: 0px) and (max-width: 500px) {
+    .main-container{
+        background-color: #255F38;
+        width: 100%;
+        margin-left: 0;
+        border-radius: 10px;
+    }
+    
+}
