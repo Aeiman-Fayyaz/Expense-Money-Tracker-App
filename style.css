@@ -2,10 +2,12 @@
     font-family: "jost";
     src: url(./Fonts-Jost/Jost-Regular.ttf);
 }
-*{
+
+* {
     box-sizing: border-box;
 }
-body{
+
+body {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,31 +16,39 @@ body{
     min-height: 100vh;
     color: #DDF6D2 !important;
 }
-.main-container{
+
+.main-container {
     background-color: #255F38;
     padding: 30px 70px;
     border-radius: 10px;
 }
-.container{
+
+.container {
     margin: 30px auto;
     width: 350px;
     font-family: "jost";
 }
-h1{
+
+h1 {
     letter-spacing: 2px;
 }
-.inc-exp-container{
+
+.inc-exp-container {
     background-color: #D1D8BE;
     width: 100%;
     filter: drop-shadow(rgba(0, 0, 0, 0.35) 0px 5px 15px);
 }
-.money-plus{
+
+.money-plus {
     color: #255F38;
 }
-.money-minus{
+
+.money-minus {
     color: #c0392b;
 }
-input[type="text"],input[type="number"]{
+
+input[type="text"],
+input[type="number"] {
     display: block;
     outline: none;
     border: none;
@@ -47,24 +57,27 @@ input[type="text"],input[type="number"]{
     width: 450px !important;
     padding: 10px;
 }
-.dlt-btn{
+
+.dlt-btn {
     outline: none;
     cursor: pointer;
     top: 50%;
     left: 0px;
-    margin: 0px -10px; 
+    margin: 0px -10px;
     border: none;
     position: absolute;
-    transform: translate(-100% , -50%);
+    transform: translate(-100%, -50%);
     opacity: 0;
     transition: opacity 0.3s ease;
 }
-.list li:hover .dlt-btn{
+
+.list li:hover .dlt-btn {
     background-color: #c0392b;
     color: #DDF6D2;
     opacity: 1;
 }
-.transaction-btn{
+
+.transaction-btn {
     margin: 50px 0px 20px 0px;
     border: none;
     outline: none;
@@ -72,7 +85,8 @@ input[type="text"],input[type="number"]{
     width: 450px;
     height: 50px;
 }
-.transaction-btn:hover{
+
+.transaction-btn:hover {
     background-color: black;
     color: #B0DB9C;
     margin: 50px 0px 20px 0px;
@@ -82,11 +96,13 @@ input[type="text"],input[type="number"]{
     width: 450px;
     height: 50px;
 }
-.list{
+
+.list {
     list-style-type: none;
     padding: 0;
 }
-.list li{
+
+.list li {
     background-color: #B0DB9C;
     color: black;
     display: flex;
@@ -96,18 +112,57 @@ input[type="text"],input[type="number"]{
     /* width: 100%;  */
     margin: 10px 0;
 }
-.list li.plus{
+
+.list li.plus {
     border-right: 5px solid #2ecc71;
 }
-.list li.minus{
+
+.list li.minus {
     border-right: 5px solid #c0392b;
 }
+
 @media screen and (min-width: 0px) and (max-width: 500px) {
-    .main-container{
+    .main-container {
+        padding: 0;
         background-color: #255F38;
         width: 100%;
         margin-left: 0;
         border-radius: 10px;
     }
-    
+
+    input[type="text"],
+    input[type="number"] {
+        display: block;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        width: 350px !important;
+        padding: 10px;
+    }
+
+    .transaction-btn {
+        margin: 50px 0px 20px 0px;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        width: 350px;
+        height: 50px;
+    }
+
+    .transaction-btn:hover {
+        background-color: black;
+        color: #B0DB9C;
+        margin: 50px 0px 20px 0px;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        width: 350px;
+        height: 50px;
+    }
+    .inc-exp-container{
+    background-color: #D1D8BE;
+    width: 100%;
+    filter: drop-shadow(rgba(0, 0, 0, 0.35) 0px 5px 15px);
+}
 }
