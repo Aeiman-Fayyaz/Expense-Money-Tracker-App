@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "playfair";
-    src: url(./Fonts-Playfair/PlayfairDisplay-Regular.ttf);
+    font-family: "jost";
+    src: url(./Fonts-Jost/Jost-Regular.ttf);
 }
 *{
     box-sizing: border-box;
@@ -16,13 +16,13 @@ body{
 }
 .main-container{
     background-color: #255F38;
-    margin-left: 0;
+    padding: 30px 70px;
     border-radius: 10px;
 }
 .container{
     margin: 30px auto;
     width: 350px;
-    font-family: "playfair";
+    font-family: "jost";
 }
 h1{
     letter-spacing: 2px;
@@ -44,23 +44,32 @@ input[type="text"],input[type="number"]{
     border: none;
     border-radius: 5px;
     font-size: 16px;
-    width: 350px;
+    width: 450px !important;
     padding: 10px;
 }
 .dlt-btn{
     outline: none;
+    cursor: pointer;
+    top: 50%;
+    left: 0px;
+    margin: 0px -10px; 
     border: none;
+    position: absolute;
+    transform: translate(-100% , -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
-.dlt-btn:hover{
+.list li:hover .dlt-btn{
     background-color: #c0392b;
     color: #DDF6D2;
+    opacity: 1;
 }
 .transaction-btn{
     margin: 50px 0px 20px 0px;
     border: none;
     outline: none;
     border-radius: 10px;
-    width: 350px;
+    width: 450px;
     height: 50px;
 }
 .transaction-btn:hover{
@@ -70,8 +79,28 @@ input[type="text"],input[type="number"]{
     border: none;
     outline: none;
     border-radius: 10px;
-    width: 350px;
+    width: 450px;
     height: 50px;
+}
+.list{
+    list-style-type: none;
+    padding: 0;
+}
+.list li{
+    background-color: #B0DB9C;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px;
+    /* width: 100%;  */
+    margin: 10px 0;
+}
+.list li.plus{
+    border-right: 5px solid #2ecc71;
+}
+.list li.minus{
+    border-right: 5px solid #c0392b;
 }
 @media screen and (min-width: 0px) and (max-width: 500px) {
     .main-container{
